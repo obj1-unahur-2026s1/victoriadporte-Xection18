@@ -1,0 +1,27 @@
+import disciplinas.*
+import victoria.*
+
+describe "victoria se parece a pareto" {
+  method initialize() {
+    victoria.disciplina(judo)
+    victoria.altura(150)
+    victoria.cambiarCantidadDeEntrenadores(4)
+  }
+  
+  test "ahora mide 150cm" {
+    assert.equals(150, victoria.altura())
+  }
+  
+  test "ahora practica judo" {
+    assert.equals(judo, victoria.disciplina())
+  }
+  
+  test "ahora tiene 4 entrenadores" {
+    assert.equals(4, victoria.cantidadDeEntrenadores())
+  }
+
+  test "si victoria es pareto su presupueso es $" {
+    assert.equals(7540 + 480, victoria.presupuesto())
+    
+  }
+}

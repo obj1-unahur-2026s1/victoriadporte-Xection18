@@ -1,0 +1,9 @@
+import victoria.*
+
+import elementos.*
+
+describe "los presupuestos base son correctos" {
+  test "tenis tiene presupuesto" {
+    assert.equals(215, victoria.presupuesto())
+  }
+}
